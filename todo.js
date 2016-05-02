@@ -16,7 +16,7 @@ function TodoCtrl($scope){
     };
 
     $scope.subtract = function(todo){
-        $scope.todos.pop();
-      return console.log("cows")
+        var i = $scope.todos.indexOf(todo);
+        $scope.todos.splice(i,1);
     };
 }
